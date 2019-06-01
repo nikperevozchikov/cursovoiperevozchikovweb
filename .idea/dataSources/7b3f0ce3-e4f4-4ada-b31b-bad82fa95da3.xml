@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="cursovoiperevoz@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>11.1</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="cursovoiperevoz">
+      <ObjectId>41054</ObjectId>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>123</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="musicst">
+      <ObjectId>24670</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="musicstorage">
+      <ObjectId>16500</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="5" parent="1" name="musicstore">
+      <ObjectId>16393</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="6" parent="1" name="postgres">
+      <ObjectId>13012</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="7" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="14" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="15" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="16" parent="2" name="information_schema">
+      <ObjectId>12716</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="17" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="18" parent="2" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="19" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="20" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="21" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionTimestamp>2019-04-10.12:40:54.710</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3571</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="22" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="23" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="24" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="25" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="26" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="27" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <sequence id="28" parent="21" name="position_id_position_seq">
+      <ObjectId>41117</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>891</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="29" parent="21" name="Organization_id_organization_seq">
+      <ObjectId>41063</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>865</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="30" parent="21" name="employee_id_employee_seq">
+      <ObjectId>41055</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>864</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="31" parent="21" name="event_id_event_seq">
+      <ObjectId>41076</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>868</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <sequence id="32" parent="21" name="supervision_id_mode_seq">
+      <ObjectId>41084</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>869</StateNumber>
+      <SequenceIdentity>1..2147483647</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+      <DataType>integer</DataType>
+    </sequence>
+    <table id="33" parent="21" name="employee">
+      <ObjectId>41057</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>895</StateNumber>
+    </table>
+    <table id="34" parent="21" name="event">
+      <ObjectId>41078</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>880</StateNumber>
+    </table>
+    <table id="35" parent="21" name="organization">
+      <ObjectId>41065</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>877</StateNumber>
+    </table>
+    <table id="36" parent="21" name="position">
+      <ObjectId>41071</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>891</StateNumber>
+    </table>
+    <table id="37" parent="21" name="supervision">
+      <ObjectId>41086</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>881</StateNumber>
+    </table>
+    <column id="38" parent="33" name="employeeid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1406</StateNumber>
+      <DefaultExpression>nextval(&apos;employee_id_employee_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>employee_id_employee_seq</SequenceName>
+    </column>
+    <column id="39" parent="33" name="fio">
+      <Position>2</Position>
+      <DataType>varchar(35)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>864</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="40" parent="33" name="serianumber">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>864</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="41" parent="33" name="organizationid">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1419</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="42" parent="33" name="positionid">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1417</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="43" parent="33" name="employee_pkey">
+      <ObjectId>41061</ObjectId>
+      <ColNames>employeeid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="33" name="employee_pkey">
+      <ObjectId>41062</ObjectId>
+      <ColNames>employeeid</ColNames>
+      <UnderlyingIndexName>employee_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="45" parent="33" name="employee_organization_organizationid_fk">
+      <ObjectId>66459</ObjectId>
+      <ColNames>organizationid</ColNames>
+      <RefTableId>41065</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>organization</RefTableName>
+      <RefKeyName>Organization_pkey</RefKeyName>
+      <RefColNames>organizationid</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="46" parent="33" name="employee_position_positionid_fk">
+      <ObjectId>66454</ObjectId>
+      <ColNames>positionid</ColNames>
+      <RefTableId>41071</RefTableId>
+      <RefColPositions>3</RefColPositions>
+      <RefTableName>position</RefTableName>
+      <RefKeyName>position_pk</RefKeyName>
+      <RefColNames>positionid</RefColNames>
+    </foreign-key>
+    <column id="47" parent="34" name="eventid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1408</StateNumber>
+      <DefaultExpression>nextval(&apos;event_id_event_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>event_id_event_seq</SequenceName>
+    </column>
+    <column id="48" parent="34" name="nameevent">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>868</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="34" name="dateofevent">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>868</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="50" parent="34" name="resultofevent">
+      <Position>4</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>868</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="51" parent="34" name="event_pkey">
+      <ObjectId>41082</ObjectId>
+      <ColNames>eventid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="52" parent="34" name="event_pkey">
+      <ObjectId>41083</ObjectId>
+      <ColNames>eventid</ColNames>
+      <UnderlyingIndexName>event_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="53" parent="35" name="organizationid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1420</StateNumber>
+      <DefaultExpression>nextval(&apos;&quot;Organization_id_organization_seq&quot;&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>Organization_id_organization_seq</SequenceName>
+    </column>
+    <column id="54" parent="35" name="nameorganization">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1037</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="35" name="ogrn">
+      <Position>3</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>865</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="56" parent="35" name="datefoundation">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1038</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="57" parent="35" name="eventid">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1414</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="58" parent="35" name="modeid">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1415</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="59" parent="35" name="Organization_pkey">
+      <ObjectId>41069</ObjectId>
+      <ColNames>organizationid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="35" name="Organization_pkey">
+      <ObjectId>41070</ObjectId>
+      <ColNames>organizationid</ColNames>
+      <UnderlyingIndexName>Organization_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="61" parent="35" name="organization_event_eventid_fk">
+      <ObjectId>66464</ObjectId>
+      <ColNames>eventid</ColNames>
+      <RefTableId>41078</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>event</RefTableName>
+      <RefKeyName>event_pkey</RefKeyName>
+      <RefColNames>eventid</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="62" parent="35" name="organization_supervision_modeid_fk">
+      <ObjectId>66469</ObjectId>
+      <ColNames>modeid</ColNames>
+      <RefTableId>41086</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>supervision</RefTableName>
+      <RefKeyName>supervision_pkey</RefKeyName>
+      <RefColNames>modeid</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="63" parent="36" name="nameposition">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>867</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="64" parent="36" name="salary">
+      <Position>2</Position>
+      <DataType>real|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>867</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="65" parent="36" name="positionid">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1411</StateNumber>
+      <DefaultExpression>nextval(&apos;position_id_position_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>position_id_position_seq</SequenceName>
+    </column>
+    <index id="66" parent="36" name="position_pk">
+      <ObjectId>41128</ObjectId>
+      <ColNames>positionid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="36" name="position_pk">
+      <ObjectId>41129</ObjectId>
+      <ColNames>positionid</ColNames>
+      <UnderlyingIndexName>position_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="37" name="modeid">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1409</StateNumber>
+      <DefaultExpression>nextval(&apos;supervision_id_mode_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>supervision_id_mode_seq</SequenceName>
+    </column>
+    <column id="69" parent="37" name="namemode">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>869</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="37" name="resultsupervision">
+      <Position>3</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>869</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="71" parent="37" name="supervision_pkey">
+      <ObjectId>41090</ObjectId>
+      <ColNames>modeid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="72" parent="37" name="supervision_pkey">
+      <ObjectId>41091</ObjectId>
+      <ColNames>modeid</ColNames>
+      <UnderlyingIndexName>supervision_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

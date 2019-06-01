@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1044.8667556980058" y="0.0">entites.Organization</node>
+    <node x="916.8750000000001" y="212.0">entites.Employee</node>
+    <node x="0.0" y="267.0">dao.IPositionDAO</node>
+    <node x="29.969070512820508" y="33.0">entites.Position</node>
+    <node x="239.0000000000001" y="517.0">dao.implement.EventDAO</node>
+    <node x="1044.0223112535614" y="517.0">dao.implement.OrganizationDAO</node>
+    <node x="608.2873397435898" y="234.0">dao.AdapterDAO</node>
+    <node x="1170.6944444444443" y="275.8888888888889">dao.IOrganizationDAO</node>
+    <node x="867.0223112535613" y="517.0">dao.implement.EmployeeDAO</node>
+    <node x="62.0" y="517.0">dao.implement.PositionDAO</node>
+    <node x="367.91814458689464" y="234.0">entites.Supervision</node>
+    <node x="630.0223112535613" y="462.0">dao.implement.AdapterImplDAO</node>
+    <node x="445.2500000000001" y="517.0">dao.implement.SupervisionDAO</node>
+    <node x="175.91814458689464" y="223.0">entites.Event</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="dao.IOrganizationDAO" target="entites.Organization">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.OrganizationDAO" target="entites.Organization">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.SupervisionDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.SupervisionDAO" target="entites.Supervision">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.OrganizationDAO" target="dao.IOrganizationDAO">
+      <point x="62.799999999999955" y="-37.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="dao.implement.PositionDAO" target="dao.IPositionDAO">
+      <point x="-62.80000000000001" y="-37.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="dao.implement.EventDAO" target="entites.Event">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.PositionDAO" target="entites.Position">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.IPositionDAO" target="entites.Position">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.OrganizationDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.AdapterImplDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.EmployeeDAO" target="entites.Employee">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.EmployeeDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.EventDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="dao.implement.PositionDAO" target="dao.AdapterDAO">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="666.4999999999998" y="290.0" />
+  <SelectedNodes>
+    <node>dao.IOrganizationDAO</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
